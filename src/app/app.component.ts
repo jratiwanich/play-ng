@@ -4,6 +4,7 @@ import {Observable} from 'rxjs/Observable';
 import 'rxjs/add/observable/from';
 import 'rxjs/add/operator/map';
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -20,5 +21,9 @@ export class AppComponent {
       e => console.log(`onError: ${e}`),
       () => console.log('onCompleted'));
 
+  }
+
+  testOb2(){
+    console.log("nothing yet");
   }
 }
